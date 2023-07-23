@@ -1,5 +1,10 @@
+<script setup>
+const colorMode = useColorMode();
+
+colorMode.preference = "mytheme";
+</script>
 <template>
-  <div data-theme="light" class="h-screen">
+  <div class="h-screen">
     <div class="m-auto">
       <NuxtPage />
     </div>

@@ -8,24 +8,19 @@ module.exports = {
     "./nuxt.config.{js,ts}",
     "./app.vue",
   ],
-  theme: {
-    extend: {},
-  },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: false,
-    dark: {
-      ...require("daisyui/src/theming/themes")["[data-theme=dark]"],
-      "primary": "blue",
-      "primary-focus": "mediumblue",
-    },
-    light: {
-      ...require("daisyui/src/theming/themes")["[data-theme=light]"],
-      "primary": "#40B581",
-      "primary-focus": "#33A06F",
-      "secondary": "#F9F9F9",
-      "secondary-focus": "#E5E5E5",
-      "base-content": "#FFFFFF",
+    themes: ['mytheme'],
+    mytheme: {
+      "primary": "#41B883",    // Vue 3 Primary Color
+      "secondary": "#EFC84A",  // Vue 3 Secondary Color
+      "accent": "#35495E",     // Vue 3 Accent Color
+      "neutral": "#f9fafb",    // Vue 3 Neutral Color
+      "base-100": "#ffffff",
+      "info": "#3abff8",
+      "success": "#36d399",
+      "warning": "#fbbd23",
+      "error": "#f87272",
     },
   },
 }
