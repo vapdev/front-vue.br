@@ -28,8 +28,9 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.2.1",
-    "pinia": "^2.1.4",
+    "axios": "^1.4.0",
     "google-auth-library": "^9.0.0",
-    "nuxt-vue3-google-signin": "^0.0.8"
+    "nuxt-vue3-google-signin": "^0.0.8",
+    "pinia": "^2.1.4"
   }
 }

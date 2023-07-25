@@ -1,5 +1,4 @@
 <script setup>
-const { logedIn } = useUserStore();
 </script>
 <template>
 	<div class="navbar bg-base-100">

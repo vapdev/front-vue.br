@@ -29,7 +29,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-
+  
   colorMode: {
     preference: 'light', // default theme
     dataValue: 'theme', // activate data-theme in <html> tag
