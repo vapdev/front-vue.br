@@ -11,7 +11,7 @@ defineExpose({
 });
 </script>
 <template>
-	<dialog :ref="modalRef" class="modal">
+	<dialog :ref="modalRef" class="modal modal-bottom sm:modal-bottom">
 		<form method="dialog" class="modal-box">
 			<slot name="header"></slot>
 			<slot name="body"></slot>

@@ -1,7 +1,12 @@
 <script setup>
 const colorMode = useColorMode();
 
-colorMode.preference = "mytheme";
+onMounted(() => {
+  const theme = 'forest';
+  if (theme) {
+    colorMode.preference = theme;
+  }
+});
 </script>
 <template>
   <div class="h-screen">

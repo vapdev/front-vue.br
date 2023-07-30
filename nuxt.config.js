@@ -1,12 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   pages: true,
-  css: ['~/assets/css/main.css'],
   modules: [
     'nuxt-icon', 
     '@vueuse/nuxt', 
     '@pinia/nuxt', 
-    '@nuxtjs/tailwindcss', 
+    '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     'nuxt-vue3-google-signin'
   ],
@@ -21,13 +20,6 @@ export default defineNuxtConfig({
       'defineStore', // import { defineStore } from 'pinia'
       ['defineStore', 'definePiniaStore'], // import { defineStore as definePiniaStore } from 'pinia'
     ],
-  },
-
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
   },
   
   colorMode: {

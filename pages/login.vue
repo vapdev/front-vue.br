@@ -23,8 +23,6 @@
 </template>
 
 <script setup>
-import { useAuth } from '@/stores/auth.js';
-
 const email = ref('')
 const senha = ref('')
 const mostrarSenha = ref(false)
@@ -32,8 +30,7 @@ const router = useRouter()
 const auth = useAuth()
 const $axios = useNuxtApp().$axios
 
-console.log($axios)
-async function login () {
+const login = async () => {
 	let response;
 	try {
 		response = await $axios.post('/api/login', 

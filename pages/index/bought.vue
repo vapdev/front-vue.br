@@ -3,6 +3,6 @@
 </script>
 <template>
 <div>
-    BBBBBBBBBBBBBBBBBBBBB
+  BBBBBBBBBBBBBBBBBBBBB
 </div>
 </template>
